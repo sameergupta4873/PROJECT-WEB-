@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+*{
+    box-sizing: border-box;
+    font-family:  'Ubuntu', sans-serif;
+}
+
+
+.header-image{
+    margin-top: -8rem;
+    width: 100%;
+    z-index: -2;
+}
+
+.header-image img{
+    height: 500px;
+    width: 100%;
+}
+
+.header-background{
+    background-color: white;
+    opacity: .9;
+    height: 3rem;
+    box-shadow: 5px 5px 20px 0 black;
+    position: fixed;
+    z-index: 100;
+    top:.01rem;
+    left: 0rem;
+    width: 100%;
+}
+
+header{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0rem 15rem;
+    height: 3rem;
+    align-items: center;
+}
+
+
+
+header li{
+    list-style: none;
+    padding: .1rem .5rem;
+    display: inline;
+}
+
+header li a{
+    text-decoration: none;
+    padding: .05rem;
+    color: black;
+}
+header li a:hover{
+    border-bottom: 2px solid black;
+    color: black;
+
+}
+
+.logo{
+    position: fixed;
+    top: -.6rem;
+    left: 15rem;
+    z-index: 101;
+}
+
+.header-text{
+    position: absolute;
+    text-align: center;
+    top:14rem;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.menu-button{
+    margin-top: 2rem;
+    
+}
+
+.menu-button p a{
+    background-color: rgb(0, 121, 73);
+    padding: .5rem 2rem;
+    border-radius: 40px;
+    color: white;
+    text-decoration: none;
+}
+
+main{
+    margin: 8rem 2rem;
+    height: 100px;
+}
+
+.about-us{
+    display: flex;
+    margin: 1rem 8rem;
+    height: 80px;
+}
+
+.about-text{
+    width: 70%;
+    padding: 2rem;
+    background-color:rgb(251, 251, 251);
+    height: 350px;
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: about-text-movement 1s ease-in-out forwards;
+}
+.about-text p{
+    
+    color: rgb(93, 93, 93);
+    font-size: .9rem;
+    line-height: 2rem;
+    
+    
+}
+@keyframes about-text-movement{
+100%{
+    transform: translateX(0%);
+    opacity: 1;
+}
+}
+
+.about-text{
+    opacity: 1;
+}
+.about-image{
+    width: 50%;
+    height: 350px;
+    transform: translateX(125%);
+    animation: about-image-movement 1s ease-in-out forwards;
+    opacity: 0;
+}
+
+@keyframes about-image-movement {
+    100%{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+.types-of-food{
+    margin-top: 28rem;
+    text-align: center;
+}
+
+.foods{
+    display: flex;
+    height: 16rem;
+    margin: 5rem 8rem;
+    justify-content: space-between;
+}
+
+.food{
+    position: relative;
+    height: 100%;
+    width: 21.5rem;
+}
+
+.food img{
+    
+    height: 100%;
+    width: 100%;
+}
+
+.food-content{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 100%;
+    left: 50%;
+    z-index: 2;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+.food-content h3{
+    color: white;
+    font-size: 2rem;
+}
+
+.food-content a{
+    font-size: .7rem;
+    text-decoration: none;
+    background-color: rgb(0, 121, 73);
+    padding: .8rem;
+    color: white;
+    border-radius: 10px;
+}
+
+.food::after{
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.859);
+    z-index: 1;
+    opacity: 0;
+}
+
+.food:hover .food-content{
+    top: 30%;
+    opacity: 1;
+}
+
+.food:hover::after{
+    opacity: 1;
+}
+
+.food-menu{
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    height: 60rem;
+    margin: 20rem 8rem;
+}
+
+.food-items{
+    display: flex;
+    height: 33.33%;
+    width: 50%;
+    justify-content: center;
+}
+
+.food-image img{
+    height: 15rem;
+    width: 15rem;
+    border-radius: 80%;
+}
+
+.image-text{
+    width: 50%;
+    margin-left: 1rem;
+}
+
+.image-text p{
+    font-size: .7rem;
+    padding: 0rem .3rem;
+}
+
+.image-text .price{
+    color: rgb(0, 121, 73);
+    font-size: 1.05rem;
+    font-weight:bolder;
+}
+
+.menu-heading{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 100rem;
+    left:50%;
+}
+
+.testimonials{
+    margin: -20rem -3rem;
+    text-align: center;
+    height: 23rem;
+    background-color: rgb(248, 248, 248);
+}
+.testimonials h2{
+    padding: .5rem;
+}
+.customers{
+    display: flex;
+    height: 17rem;
+    margin: 0 10rem;
+}
+
+.customer{
+    width: 32%;
+}
+
+.customer img{
+    text-align: center;
+    width: 9rem;
+    height: 9rem;
+    border-radius: 100%;
+}
+
+.star{
+    color: rgb(255, 188, 5);
+}
+
+.contact{
+    margin: 25rem -3rem;
+    height: 29rem;
+    background-color: rgb(231, 231, 231);
+}
+
+.contact-us{
+    margin: 0rem 12rem;
+    height: 27rem;
+    display: flex;
+    padding-top: 2rem;
+}
+
+.contact-image img{
+    width: 32rem;
+    height: 100%;
+}
+.contact-form{
+    background: white;
+    width: 37rem;
+    height: 100%;
+    padding: 0 1rem;
+}
+
+.contact-form input{
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid rgb(190, 190, 190);
+    padding: 1rem 0rem;
+}
+
+.contact-form textarea{
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid rgb(190, 190, 190);
+    padding: 1rem 0rem;
+    height: 8rem;
+    
+}
+
+.contact-form a{
+    text-decoration: none;
+    color: white;
+    background-color:rgb(0, 121, 73) ;
+    padding: .7rem 1.2rem;
+    border-radius: 4rem;
+    font-size: .8rem;
+}
+.footer{
+    margin: -20rem -3.5rem;
+    text-align: center;
+    color: white;
+    background-color: rgb(0, 22, 17);
+}
+.footer h3{
+    padding: 1.5rem;
+}
