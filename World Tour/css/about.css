@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+/* header css */
+body{
+    font-family: 'Lato', sans-serif;
+    color: white;
+}
+header{
+    height: 6.5rem;
+    background-color: rgb(28, 36, 40);
+    margin: -20px -15px ;
+    
+}
+
+.logo a{
+    display: inline-block;
+    color: aliceblue;
+    position: absolute;
+    top:6vh;
+    left:19.5%;
+    transform: translate(-50%,-50%);
+    font-size: 2rem;
+    font-weight:bolder;
+    text-decoration: none;
+}
+
+.logo a:hover{
+    font-size:1.4em;
+}
+
+.nav-icon{
+    display:inline-block;
+    
+}
+.nav-icons{
+    font-size: 1rem;
+    position: absolute;
+    top:3vh;
+    right:17%;
+    
+    
+    
+}
+li a{
+    color:azure;
+    text-decoration: none;
+    margin: 10px;
+}
+li a:hover{
+    border-bottom: azure solid 1px;
+    font-size: 1.03em;
+}
+ 
+/* header css over */
+
+/* main css */
+main{
+    margin: 80px 250px;
+    color: black;
+}
+
+.line{
+    border: rgb(248, 59, 90) solid 2.5px;
+}
+
+.container-check{
+    padding: 20px 90px;
+    height: 90px;
+    line-height: 0.1rem;
+}
+
+.check p{
+    margin: -10px;
+}
+
+.check{
+    padding: 0px 50px;
+    text-align: center;
+}
+
+.check1{
+    float: left;
+    width: 35%;
+}
+.check2{
+    float: right;
+    width: 35%;
+}
+
+.fa-solid{
+    padding: 10px;
+    color: rgb(248, 59, 90);
+    font-size: 1.2rem;
+}
+
+.features{
+    margin: 20px 0px;
+    height: 100px;
+}
+
+.feature{
+    text-align: center;
+    float: left;
+    width: 24.291%;
+    height: 55px;
+    font-weight: 2000;
+}
+
+.feature h2{
+    color:rgb(248, 59, 90);
+}
+
+.contact-us{
+    font-size: 1.2rem;
+    word-spacing: .4rem;
+    color: aliceblue;
+    font-weight:bolder;
+    height: 75px;
+    padding: 10px 20px;
+    background-color: rgb(248, 59, 90);
+    box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.836);
+}
+
+.contact-text{
+    float: left;
+
+}
+
+.contact-button{
+    font-size: 1.2rem;
+    text-align: center;
+    float: right;
+    
+}
+
+.contact-button p{
+    padding: 10px 30px;
+    color: aliceblue;
+    border: azure .2rem solid;
+}
+
+.contact-button:hover{
+    font-size: 1.21rem;
+}
+
+
+
+
+/* footer css */
+footer{
+    background-color: rgb(28, 36, 40);
+    height: 15rem;
+    text-align: center;
+    margin: 0 -30px;
+    margin-top: 30rem;
+    margin-bottom: -20px;
+}
+
+.fa-brands{
+    margin-top: 15px;
+    font-size: 30px;
+    padding: 20px;
+}
+
+.copyright{
+    padding: 10px;
+    word-spacing: 6px;
+}
+
+footer a{
+    color:white
+}
+
+@media screen and (min-width:1089px) and (max-width:1363px){
+    main{
+        margin: 5rem 10%;
+    }
+    
+}
+@media screen and (min-width:769px)and (max-width:1088px){
+    main{
+        margin: 5rem 5%;
+    }
+    .check{
+        padding: 0 1rem;
+    }
+    .contact-button p{
+        padding: .5rem 1rem;
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width:768px){
+    .container-check{
+        padding: 0 1rem;
+        
+    }
+    .check1 , .check2{
+        float: none;
+        width: 100%;
+        height: 8rem;
+        margin: 0 2rem;
+        text-align: left;
+    }
+    main{
+        margin: 5rem 5%;
+    }
+
+    .feature{
+        margin-top: 7rem;
+    }
+    .contact-us{
+        margin-top: 8rem;
+        height: 110px;
+    }
+    .contact-text{
+        font-size: 80%;
+    }
+    .contact-button{
+        float: left;
+        padding: 0 30px;
+    }
+    .contact-button p{
+        padding: .5rem 1rem;
+        font-size: 90%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    header{
+        height: 9rem;
+    }
+    .logo a{
+        left: 50%;
+    }
+    .nav-icons{
+        top:9vh;
+    }
+    .container-check{
+        padding: 0 1rem;
+        
+    }
+    .check1 , .check2{
+        float: none;
+        width: 100%;
+        height: 8rem;
+        margin: 0 2rem;
+        text-align: left;
+    }
+    main{
+        margin: 5rem 5%;
+    }
+    .feature{
+        margin-top: 7rem;
+    }
+    .contact-us{
+        margin-top: 8rem;
+        height: 150px;
+    }
+    .contact-button{
+        float: left;
+        padding: 0 30px;
+    }
+    .contact-button p{
+        padding: .5rem 1rem;
+        font-size: 90%;
+    }
+}

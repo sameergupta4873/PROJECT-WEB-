@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+/* header css */
+body{
+    font-family: 'Lato', sans-serif;
+    color: white;
+}
+header{
+    height: 6.5rem;
+    background-color: rgb(28, 36, 40);
+    margin: -20px -15px ;
+}
+
+.logo a{
+    display: inline-block;
+    color: aliceblue;
+    position: absolute;
+    top:6vh;
+    left:19.5%;
+    transform: translate(-50%,-50%);
+    font-size: 2rem;
+    font-weight:bolder;
+    text-decoration: none;
+}
+
+.logo a:hover{
+    font-size:1.4em;
+}
+
+.nav-icon{
+    display:inline-block;
+    
+}
+.nav-icons{
+    font-size: 1rem;
+    position: absolute;
+    top:3vh;
+    right:17%;
+    
+    
+    
+}
+li a{
+    color:azure;
+    text-decoration: none;
+    margin: 10px;
+}
+li a:hover{
+    border-bottom: azure solid 1px;
+    font-size: 1.03em;
+}
+ 
+/* header css over */
+
+
+/*main css*/
+main{
+    margin: 5rem 15%;
+    color: black;
+}
+
+.contact-detail{
+    height: 700px;
+}
+
+.detail{
+    height: 500px;
+}
+
+.adress{
+    float: left;
+    width: 42%;
+    padding: .1rem 2rem;
+}
+
+.adress h3{
+    color: rgb(248, 59, 90)
+}
+
+.form{
+    float: right;
+    width: 46.5%;
+    padding: .05rem 1rem;
+    line-height: 1.5rem;
+}
+
+.adress i{
+    color: rgb(248, 59, 90);
+}
+
+.adress img{
+    align-self: center;
+    height: 300px;
+    width: 97%;
+}
+.line{
+    border-bottom: .19rem solid rgb(248, 59, 90);
+}
+
+textarea{
+    width: 99%;
+    height: 100px;
+}
+
+input{
+    width: 98%;
+    height: 1.3rem;
+}
+
+.submit{
+    width: 25%;
+    height: 2rem;
+    background-color: rgb(248, 59, 90);
+    border: none;
+    color: white;
+    border-radius: .2rem;
+}
+
+.submit-align{
+    text-align: center;
+}
+
+/* footer css */
+footer{
+    background-color: rgb(28, 36, 40);
+    height: 15rem;
+    text-align: center;
+    margin: 0px -30px;
+}
+
+.fa-brands{
+    margin-top: 15px;
+    font-size: 30px;
+    padding: 20px;
+}
+
+.copyright{
+    padding: 10px;
+    word-spacing: 6px;
+}
+
+footer a{
+    color:white
+}
+
+@media screen and (max-width:500px) {
+    header{
+        height: 8rem;
+    }
+    .logo a{
+        left: 50%;
+    }
+    .nav-icons{
+        top:9vh;
+    }
+
+    .form , .adress{
+        float: none;
+        width: 100%;
+        margin-top: 6rem;
+    }
+    main{
+        margin: 0rem 2rem;
+    }
+
+    .adress img{
+        height: 45%;
+    }
+
+    footer{
+        margin-top: 40rem;
+    }
+    .submit{
+        width: 35%;
+    }
+}
+
+@media screen and (min-width:501px) and (max-width:768px){
+    .form , .adress{
+        float: none;
+        width: 100%;
+        margin-top: 6rem;
+    }
+    main{
+        margin: 0rem 5rem;
+    }
+
+    .adress img{
+        height: 45%;
+    }
+    footer{
+        margin-top: 35rem;
+    }
+    .submit{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1400px){
+    main{
+        margin: 5rem 10%;
+    }
+
+    .form , .adress{
+        width: 40%;
+    }
+}
+
+
+
